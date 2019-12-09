@@ -12,11 +12,8 @@ class BonusPageComponent extends CBitrixComponent
     public function onPrepareComponentParams($arParams)
     {
         $result = [
-            "MAIN" => $arParams["MAIN"],
-            "BOTTOM_SECTION" => $arParams["BOTTOM_SECTION"],
-            "TOP_SECTION" => $arParams["TOP_SECTION"],
             "CACHE_TYPE" => $arParams["CACHE_TYPE"],
-            "CACHE_TIME" => isset($arParams["CACHE_TIME"]) ? $arParams["CACHE_TIME"] : 60,
+            "CACHE_TIME" => isset($arParams["CACHE_TIME"]) ? $arParams["CACHE_TIME"] : 600,
         ];
 
         return $result;
